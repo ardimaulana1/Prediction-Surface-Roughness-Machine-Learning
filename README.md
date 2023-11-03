@@ -15,4 +15,10 @@ was conducted by measuring the vibration level of the 3D printer machine and the
 roughness of the printed specimen using various parameter settings such as printing speed, 
 extruder temperature and layer thickness.
 
-
+The machine learning method used is polynomial regression to predict the quality level
+of printing results. The accuracy of the R-squared machine learning system obtained in this study reached
+85%. The results show that there is a correlation between layer thickness and vibration of the
+3D printer machine and surface roughness of the print. With the application of machine
+learning, the quality level of printing results can be predicted with sufficient accuracy. This
+research has the potential to help improve the quality of printing results on 3D printer machines
+by optimizing the parameter settings used.
