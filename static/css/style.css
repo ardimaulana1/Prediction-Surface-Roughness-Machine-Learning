@@ -1,0 +1,72 @@
+body {
+    background: #f7f9ff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #555;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #00011c;
+}
+ 
+p {
+    margin-bottom: 24px;
+    line-height: 1.9;
+}
+ 
+label {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #00011c;
+}
+
+#title-container {
+    min-height: 460px;
+    height: 100%;
+    color: #fff;
+    background-color: #DC3545;
+    text-align: center;
+    padding: 105px 28px 28px 28px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 10px 8px 21px 0px rgba(204, 204, 204, 0.75);
+    -webkit-box-shadow: 10px 8px 21px 0px rgba(204, 204, 204, 0.75);
+    -moz-box-shadow: 10px 8px 21px 0px rgba(204, 204, 204, 0.75);
+}
+ 
+#title-container h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+    padding: 0;
+    margin-bottom: 15px;
+}
+ 
+#title-container h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #82000a;
+    padding: 0;
+}
+ 
+#title-container p {
+    font-size: 13px;
+    padding: 0 15px;
+    text-align: justify;
+    line-height: 20px;
+}
+ 
+.surface-image {
+    width: 250px;
+    margin-bottom: 15px;
+}

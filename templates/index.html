@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Surface Rougness Prediction App</title>
+      <!-- CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+      <!-- FONT -->
+      <link href="https://fonts.gstatic.com" rel="preconnect">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+   </head>
+   <body>
+        <!-- CONTAINER -->
+        <div class="container d-flex align-items-center min-vh-100">
+            <div class="row mt-3 mb-3 g-0 justify-content-center">
+                <!-- FORMS -->
+                <div class="col-lg-8 p-5 card" style="background-color: #e9e8e8;">
+                    <!-- Begin Form code -->
+                    <form action="/predict" method="post">
+                    <div class = "row">
+                      <div class="form-group col-md-offset-6 col-md-6 mt-2">
+                        <label for="printing_speed">Printing Speed</label>
+                        <input class="form-control" type="number" value="0" id = "printing_speed" name = "printing_speed">
+                      </div>
+
+                      <div class="form-group col-md-offset-6 col-md-6 mt-2">
+                        <label for="layer_thickness">Layer Thickness</label>
+                        <input class="form-control" type="text" id = "layer_thickness" name = "layer_thickness">
+                      </div>
+
+                      <div class="form-group col-md-offset-6 col-md-6 mt-2">
+                        <label for="tempterature_extruder">Tempterature Extruder</label>
+                        <input class="form-control" type="number" value="0" id = "tempterature_extruder" name = "tempterature_extruder">
+                      </div>
+
+                      <div class="form-group col-md-offset-6 col-md-6 mt-2">
+                        <label for="getaran_x">Getaran X</label>
+                        <input class="form-control" type="number" value="0" id = "getaran_x" name = "getaran_x">
+                      </div>
+
+                      <div class="form-group col-md-offset-6 col-md-6 mt-2">
+                        <label for="getaran_y">Getaran Y</label>
+                        <input class="form-control" type="number" value="0" id = "getaran_y" name = "getaran_y">
+                      </div>
+
+                      <div class="form-group col-md-offset-6 col-md-6 mt-2">
+                        <label for="getaran_z">Getaran Z</label>
+                        <input class="form-control" type="number" value="0" id = "getaran_z" name = "getaran_z">
+                      </div>
+
+                    </div>
+                    <div class="text-center mt-5">
+                      <input type="submit" value="Submit" class="btn btn-danger">
+                    </div>
+                  </form>
+                {% if hasil_prediksi %}
+                <div class="mt-3">
+                    <h3 class="text-center">Result Prediction</h3>
+                    <p class="text-center">Surface Roughness Prediction<span class="fw-bold"> {{hasil_prediksi}}</span></p>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+
+    <!-- ====  BOOTSTRAP JS CDN ==== -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+   </body>
+</html>
+
